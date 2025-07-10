@@ -1,24 +1,47 @@
-*.log
-.DS_Store
+# Arquivos de ambiente
 .env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
+.env.*
+
+# IDEs e ferramentas
 /.vscode
+/.idea
+/.phpactor.json
+/.phpunit.cache
+/.fleet
 /.zed
-/auth.json
+
+# Cache e logs
+*.log
+.phpunit.result.cache
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Dependências
 /node_modules
-/public/build
+/vendor
+
+# Build e public
 /public/hot
+/public/build
 /public/storage
+/public/assets
+/public/mix-manifest.json
+
+# Storage sensível
 /storage/*.key
 /storage/pail
-/vendor
-Homestead.json
+
+# Homestead
 Homestead.yaml
-Thumbs.db
+Homestead.json
+
+# Arquivos temporários e de backup
+*.bak
+*.tmp
+*.swp
+*.zip
+
+# Nova (admin panel Laravel)
+.nova
